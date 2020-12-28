@@ -17,4 +17,4 @@
 ![삭제 완료시](https://github.com/KINGTAEHEE/YPBOOKS_POSDBDelete/blob/main/POSDBDelete-3.PNG)
 
 
-**주요 정보는 * 문자로 대체.**
+**소스 코드 중 주요 정보는 * 문자로 대체.**
