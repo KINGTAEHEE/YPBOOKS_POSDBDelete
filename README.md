@@ -14,7 +14,7 @@
 쿼리를 보낼때 조건으로 입력받은 값들을 올바른 데이터 타입으로 변환하여 보내기 때문에 처리 속도가 빠르다.
 
 
-![삭제 완료시](https://github.com/KINGTAEHEE/YPBOOKS_POSDBDelete/blob/main/POSDBDelete-1.PNG)
+![삭제 완료시](https://github.com/KINGTAEHEE/YPBOOKS_POSDBDelete/blob/main/POSDBDelete-3.PNG)
 
 
 **주요 정보는 * 문자로 대체.**
