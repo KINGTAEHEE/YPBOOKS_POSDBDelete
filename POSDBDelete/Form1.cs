@@ -231,14 +231,62 @@ namespace POSDBDelete
 
         private void btDELETE_Click(object sender, EventArgs e)
         {
-            if (tbBRCODE.TextLength == 0 || tbWKDATE.TextLength == 0 || tbPOSNO.TextLength == 0 || tbGROUPNO.TextLength == 0 || tbVNO.TextLength == 0)
+            if (radioButton1.Checked == true) // 조건으로 삭제
             {
-                MessageBox.Show("조건값이 올바르지 않음");
+                if (tbBRCODE.TextLength == 0 || tbWKDATE.TextLength == 0 || tbPOSNO.TextLength == 0 || tbGROUPNO.TextLength == 0 || tbVNO.TextLength == 0 ||
+                    tbBRCODE.TextLength != 4 || tbWKDATE.TextLength != 8 || tbPOSNO.TextLength > 2 || tbGROUPNO.TextLength != 1 || tbVNO.TextLength > 5)
+                {
+                    MessageBox.Show("조건값이 올바르지 않음");
+                }
+                else
+                {
+                    DBDELETE(tbBRCODE.Text, tbWKDATE.Text, tbPOSNO.Text, tbGROUPNO.Text, tbVNO.Text);
+                }
             }
-            else
+            else if (radioButton2.Checked == true) // 영수증 번호로 삭제
             {
-                DBDELETE(tbBRCODE.Text, tbWKDATE.Text, tbPOSNO.Text, tbGROUPNO.Text, tbVNO.Text);
+                if (tbRCT.TextLength != 18)
+                {
+                    MessageBox.Show("영수증 번호가 올바르지 않음");
+                }
+                else
+                {
+                    // 영수증 번호 예시 : 370020123114100304
+                    string BRCODE = tbRCT.Text.Substring(0, 4);
+                    string WKDATE = "20" + tbRCT.Text.Substring(4, 2) + "." + tbRCT.Text.Substring(6, 2) + "." + tbRCT.Text.Substring(8, 2);
+                    string POSNO = tbRCT.Text.Substring(10, 2);
+                    string GROUPNO = tbRCT.Text.Substring(12, 1);
+                    string VNO = tbRCT.Text.Substring(13, 5);
+                    int iVNO = Int16.Parse(VNO); // 0으로 LeftPadding된 VNO 5자리를 0 제거한 문자열로 바꾸기 위해 Int 변환 거친다
+                    VNO = iVNO.ToString();
+
+                    DBDELETE(BRCODE, WKDATE, POSNO, GROUPNO, VNO);
+                }
             }
+        }
+
+        private void radioButton1_Click(object sender, EventArgs e)
+        {
+            // 조건으로 삭제 라디오 버튼 선택시 영수증 번호로 삭제 비활성화
+            tbBRCODE.Enabled = true;
+            tbWKDATE.Enabled = true;
+            tbPOSNO.Enabled = true;
+            tbGROUPNO.Enabled = true;
+            tbVNO.Enabled = true;
+
+            tbRCT.Enabled = false;
+        }
+
+        private void radioButton2_Click(object sender, EventArgs e)
+        {
+            // 영수증 번호로 삭제 라디오 버튼 선택시 조건으로 삭제 비활성화
+            tbBRCODE.Enabled = false;
+            tbWKDATE.Enabled = false;
+            tbPOSNO.Enabled = false;
+            tbGROUPNO.Enabled = false;
+            tbVNO.Enabled = false;
+
+            tbRCT.Enabled = true;
         }
     }
 }

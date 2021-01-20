@@ -1,0 +1,8 @@
+C:\Users\YP\Documents\GitHub\YPBOOKS_POSDBDelete\POSDBDelete\bin\Release\POSDBDelete.exe.config
+C:\Users\YP\Documents\GitHub\YPBOOKS_POSDBDelete\POSDBDelete\bin\Release\POSDBDelete.exe
+C:\Users\YP\Documents\GitHub\YPBOOKS_POSDBDelete\POSDBDelete\bin\Release\POSDBDelete.pdb
+C:\Users\YP\Documents\GitHub\YPBOOKS_POSDBDelete\POSDBDelete\obj\Release\POSDBDelete.Form1.resources
+C:\Users\YP\Documents\GitHub\YPBOOKS_POSDBDelete\POSDBDelete\obj\Release\POSDBDelete.Properties.Resources.resources
+C:\Users\YP\Documents\GitHub\YPBOOKS_POSDBDelete\POSDBDelete\obj\Release\POSDBDelete.csproj.GenerateResource.Cache
+C:\Users\YP\Documents\GitHub\YPBOOKS_POSDBDelete\POSDBDelete\obj\Release\POSDBDelete.exe
+C:\Users\YP\Documents\GitHub\YPBOOKS_POSDBDelete\POSDBDelete\obj\Release\POSDBDelete.pdb
