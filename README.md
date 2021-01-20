@@ -20,8 +20,7 @@
 **소스 코드 중 주요 정보는 * 문자로 대체.**
 
 
-UPDATE LOG
-
+[UPDATE LOG]
 
 
 v1.1
