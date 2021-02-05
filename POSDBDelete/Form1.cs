@@ -234,7 +234,7 @@ namespace POSDBDelete
             if (radioButton1.Checked == true) // 조건으로 삭제
             {
                 if (tbBRCODE.TextLength == 0 || tbWKDATE.TextLength == 0 || tbPOSNO.TextLength == 0 || tbGROUPNO.TextLength == 0 || tbVNO.TextLength == 0 ||
-                    tbBRCODE.TextLength != 4 || tbWKDATE.TextLength != 8 || tbPOSNO.TextLength > 2 || tbGROUPNO.TextLength != 1 || tbVNO.TextLength > 5)
+                    tbBRCODE.TextLength != 4 || tbWKDATE.TextLength != 10 || tbPOSNO.TextLength > 2 || tbGROUPNO.TextLength != 1 || tbVNO.TextLength > 5)
                 {
                     MessageBox.Show("조건값이 올바르지 않음");
                 }

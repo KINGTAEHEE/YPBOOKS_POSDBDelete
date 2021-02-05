@@ -1,9 +1,0 @@
-C:\Users\YP\Documents\GitHub\YPBOOKS_POSDBDelete\POSDBDelete\bin\Debug\POSDBDelete.exe.config
-C:\Users\YP\Documents\GitHub\YPBOOKS_POSDBDelete\POSDBDelete\bin\Debug\POSDBDelete.exe
-C:\Users\YP\Documents\GitHub\YPBOOKS_POSDBDelete\POSDBDelete\bin\Debug\POSDBDelete.pdb
-C:\Users\YP\Documents\GitHub\YPBOOKS_POSDBDelete\POSDBDelete\obj\Debug\POSDBDelete.csprojResolveAssemblyReference.cache
-C:\Users\YP\Documents\GitHub\YPBOOKS_POSDBDelete\POSDBDelete\obj\Debug\POSDBDelete.Form1.resources
-C:\Users\YP\Documents\GitHub\YPBOOKS_POSDBDelete\POSDBDelete\obj\Debug\POSDBDelete.Properties.Resources.resources
-C:\Users\YP\Documents\GitHub\YPBOOKS_POSDBDelete\POSDBDelete\obj\Debug\POSDBDelete.csproj.GenerateResource.Cache
-C:\Users\YP\Documents\GitHub\YPBOOKS_POSDBDelete\POSDBDelete\obj\Debug\POSDBDelete.exe
-C:\Users\YP\Documents\GitHub\YPBOOKS_POSDBDelete\POSDBDelete\obj\Debug\POSDBDelete.pdb
